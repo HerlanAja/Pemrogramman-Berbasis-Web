@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex; /* Menggunakan flexbox untuk layout header */
+    align-items: center; /* Memusatkan item secara vertikal */
+    padding: 10px 20px; /* Menambahkan padding pada header */
+    background-color: #fff; /* Warna latar belakang header */
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between; /* Memisahkan logo dan navigasi dari ikon pencarian */
+}
+
+.search-icon {
+    cursor: pointer; /* Mengubah kursor saat hover pada ikon pencarian */
+}
+
+.header-content {
+    display: flex; /* Menggunakan flexbox untuk konten header */
+    align-items: center; /* Memusatkan item secara vertikal */
+}
+
+.header img {
+    height: 50px; /* Ukuran logo */
+}
+
+.nav {
+    display: flex; /* Menggunakan flexbox untuk navbar */
+    gap: 20px; /* Jarak antar tautan */
+    margin-left: 20px; /* Jarak kiri untuk memindahkan navbar dekat logo */
+}
+
+.nav a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #000; /* Warna teks navbar */
+    font-weight: bold; /* Mengatur ketebalan font */
+}
+
+.container {
+    display: flex; /* Mengatur kontainer menjadi flexbox */
+    justify-content: center; /* Menyeimbangkan item secara horizontal */
+    padding: 20px; /* Menambahkan padding pada kontainer */
+}
+
+.content-area {
+    flex: 1; /* Membuat area konten tumbuh untuk mengisi ruang yang tersisa */
+    max-width: 800px; /* Maksimal lebar area konten */
+    margin: 0 20px; /* Jarak kiri dan kanan area konten */
+}
+
+.main-content {
+    width: 100%; /* Lebar konten utama */
+}
+
+.sidebar {
+    width: 30%; /* Lebar sidebar */
+}
+
+.posts-grid {
+    display: grid; /* Mengatur grid untuk postingan */
+    grid-template-columns: 1fr 1fr; /* Dua kolom */
+    gap: 20px; /* Jarak antar kolom */
+}
+
+.post {
+    background-color: #fff; /* Warna latar belakang postingan */
+    padding: 20px; /* Padding dalam postingan */
+    border: 1px solid #ddd; /* Border pada postingan */
+}
+
+.post img {
+    width: 100%; /* Lebar gambar penuh */
+    height: auto; /* Tinggi otomatis */
+}
+
+.post .category {
+    background-color: #ff5722; /* Warna kategori */
+    color: #fff; /* Warna teks kategori */
+    padding: 5px 10px; /* Padding kategori */
+    display: inline-block; /* Menampilkan kategori sebagai blok inline */
+    margin-bottom: 10px; /* Jarak bawah kategori */
+}
+
+.post h2 {
+    font-size: 1.5em; /* Ukuran font judul */
+    margin: 10px 0; /* Margin judul */
+}
+
+.post .meta {
+    color: #777; /* Warna teks metadata */
+    font-size: 0.9em; /* Ukuran font metadata */
+}
+
+.post .read-more {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan 'baca lebih lanjut' */
+    color: #ff5722; /* Warna tautan 'baca lebih lanjut' */
+    font-weight: bold; /* Mengatur ketebalan font */
+}
+
+.widget {
+    background-color: #fff; /* Warna latar belakang widget */
+    padding: 20px; /* Padding dalam widget */
+    border: 1px solid #ddd; /* Border pada widget */
+    margin-bottom: 20px; /* Margin bawah widget */
+}
+
+.titleSubcribe, .titleSocialPlugin, .titlePopulerPost {
+    text-align: center; /* Memusatkan teks judul */
+}
+
+.post-item {
+    display: flex; /* Menampilkan item postingan secara fleksibel */
+    margin-bottom: 10px; /* Jarak bawah item postingan */
+}
+
+.post-item img {
+    margin-right: 10px; /* Jarak kanan gambar item */
+}
+
+.post-info {
+    flex-grow: 1; /* Membiarkan informasi postingan tumbuh */
+}
+
+.social-icons a {
+    font-size: 24px; /* Ukuran ikon sosial */
+    margin-right: 10px; /* Jarak kanan ikon sosial */
+    color: #555; /* Warna ikon sosial */
+}
+
+input[type="email"] {
+    width: 100%; /* Lebar penuh untuk input email */
+    padding: 10px; /* Padding dalam input */
+    margin-bottom: 10px; /* Margin bawah input */
+}
+
+button {
+    width: 100%; /* Lebar penuh untuk tombol */
+    padding: 10px; /* Padding dalam tombol */
+    background-color: #ff5722; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+}
+
+.load-more {
+    padding: 10px 20px; /* Padding dalam tombol load more */
+    background-color: #ff5722; /* Warna latar belakang tombol load more */
+    color: #fff; /* Warna teks tombol load more */
+    border: none; /* Menghilangkan border tombol load more */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    display: block; /* Menampilkan tombol load more sebagai blok */
+    margin: 20px auto; /* Margin otomatis untuk pusat */
+    font-size: 1em; /* Ukuran font tombol load more */
+    border-radius: 5px; /* Membulatkan sudut tombol load more */
+    transition: background-color 0.3s; /* Transisi warna latar belakang */
+}
+
+.load-more:hover {
+    background-color: #e64a19; /* Warna saat hover pada tombol load more */
+}
+
+.footer {
+    text-align: center; /* Memusatkan teks footer */
+    padding: 20px; /* Padding dalam footer */
+    background-color: #fff; /* Warna latar belakang footer */
+    border-top: 1px solid #ddd; /* Border atas footer */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Mengatur kolom untuk perangkat kecil */
+        padding: 10px; /* Padding untuk perangkat kecil */
+    }
+    .main-content {
+        width: 100%; /* Lebar penuh konten utama pada perangkat kecil */
+        margin-right: 0; /* Menghilangkan margin kanan pada perangkat kecil */
+    }
+    .sidebar {
+        width: 100%; /* Lebar penuh sidebar pada perangkat kecil */
+    }
+    .posts-grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk perangkat kecil */
+    }
+}
+
+.container {
+    display: flex; /* Mengatur kontainer menjadi flexbox */
+    justify-content: center; /* Menyeimbangkan item secara horizontal */
+    padding: 50px; /* Menambahkan padding pada kontainer */
+}
+
+.main-content {
+    width: 70%; /* Lebar konten utama */
+    margin-right: 20px; /* Jarak ke sidebar */
+    padding: 0 30px; /* Menambahkan padding kiri dan kanan */
+}
+
+.sidebar {
+    width: 30%; /* Lebar sidebar */
+    padding: 0 30px; /* Menambahkan padding kiri dan kanan */
+}
